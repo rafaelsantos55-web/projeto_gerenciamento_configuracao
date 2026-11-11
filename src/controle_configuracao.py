@@ -1,6 +1,6 @@
 """Exemplo didático de controle de itens de configuração."""
 
-VERSAO = "1.1.0"
+VERSAO = "1.1.1"
 
 
 def listar_artefatos():
@@ -9,6 +9,7 @@ def listar_artefatos():
         {"nome": "requisitos.md", "tipo": "documentacao", "versao": "1.0"},
         {"nome": "controle_configuracao.py", "tipo": "codigo-fonte", "versao": VERSAO},
         {"nome": "testes_unitarios.py", "tipo": "teste", "versao": "1.0"},
+        {"nome": "CHANGELOG.md", "tipo": "documentacao", "versao": "1.1.1"},
     ]
 
 

@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração de um vetor de tamanho 5 para armazenar as vendas diárias
+    int vendas[5];
+    int soma = 0;
+
+    printf("=== SISTEMA DE CONTROLE DE VENDAS DIARIAS ===\n\n");
+
+    // Leitura dos 5 valores inteiros fornecidos pelo usuário
+    for (int i = 0; i < 5; i++) {
+        printf("Digite a quantidade de vendas do Dia %d: ", i + 1);
+        scanf("%d", &vendas[i]);
+        
+        // Acumula o valor inserido na variável soma
+        soma += vendas[i];
+    }
+
+    printf("\n--- Relatorio de Vendas ---\n");
+
+    // Exibição de todos os elementos do vetor, um por linha
+    for (int i = 0; i < 5; i++) {
+        printf("Dia %d: %d vendas\n", i + 1, vendas[i]);
+    }
+
+    // Exibição da soma total das vendas no período
+    printf("\nTotal geral de vendas nos 5 dias: %d\n", soma);
+
+    return 0;
+}
+
+
